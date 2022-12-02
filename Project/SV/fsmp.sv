@@ -37,45 +37,6 @@
 	  if (~reset) nextstate <= S3;
 	  else   nextstate <= S0;
        end
-       S3: begin
-	  y <= 6'b111_000;	  	  
-	  if (~reset) nextstate <= S0;
-	  else   nextstate <= S0;
-       end
-       S4: begin
-	  y <= 6'b000_100;	  	  
-	  if (~reset) nextstate <= S5;
-	  else   nextstate <= S0;
-       end
-       S5: begin
-	  y <= 6'b000_110;	  	  
-	  if (~reset) nextstate <= S6;
-	  else   nextstate <= S0;
-       end
-       S6: begin
-	  y <= 6'b000_111;	  	  
-	  if (~reset) nextstate <= S0;
-	  else   nextstate <= S0;
-       end
-       S7: begin
-	  y <= 6'b001_100;	  	  
-	  if (~reset) nextstate <= S8;
-	  else   nextstate <= S0;
-       end
-       S8: begin
-	  y <= 6'b011_110;	  	  
-	  if (~reset) nextstate <= S9;
-	  else   nextstate <= S0;
-       end
-       S9: begin
-	  y <= 6'b111_111;	  	  
-	  if (~reset) nextstate <= S0;
-	  else   nextstate <= S0;
-       end
-       default: begin
-	  y <= 6'b000_000;	  	  
-	  nextstate <= S0;
-       end
      endcase
    
 endmodule
