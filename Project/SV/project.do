@@ -27,7 +27,7 @@ if [file exists work] {
 vlib work
 
 # compile source files
-vlog datapath.sv datapath2.sv projectcontrollogic.sv project_tb.sv
+vlog datapath.sv projectcontrollogic.sv project_tb.sv
 
 # start and run simulation
 vsim -voptargs=+acc work.stimulus
@@ -38,13 +38,15 @@ view wave
 -- display input and output signals as hexidecimal values
 # Diplays All Signals recursively
 # add wave -hex -r /stimulus/*
-add wave -noupdate -divider -height 32 "FSM"
-add wave -hex /stimulus/dut/y
-add wave -hex /stimulus/dut/reset
+add wave -noupdate -divider -height 32 "GAME of LIFE" //namedthis
 add wave -hex /stimulus/dut/clk
-add wave -hex /stimulus/dut/a
-add wave -hex /stimulus/dut/state
-add wave -hex /stimulus/dut/nextstate
+add wave -hex /stimulus/dut/current_state
+add wave -hex /stimulus/dut/next_state
+add wave -hex /stimulus/dut/grid
+add wave -hex /stimulus/dut/grid_evolve
+add wave -hex /stimulus/dut/reset
+add wave -hex /stimulus/dut/seed
+
 
 
 add list -hex -r /stimulus/*
