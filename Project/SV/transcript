@@ -1,0 +1,21 @@
+# do project.do
+# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 11:28:23 on Dec 05,2022
+# vlog datapath.sv projectcontrollogic.sv project_tb.sv 
+# -- Compiling module datapath
+# -- Compiling module evolve3
+# -- Compiling module evolve5
+# -- Compiling module evolve8
+# -- Compiling module rules
+# -- Compiling module FSM
+# ** Error: (vlog-13069) projectcontrollogic.sv(14): near "typedef": syntax error, unexpected "SystemVerilog keyword 'typedef'", expecting ';' or ','.
+# -- Compiling module mux
+# ** Error: (vlog-13069) projectcontrollogic.sv(36): near "input": syntax error, unexpected input, expecting ';'.
+# -- Compiling module stimulus
+# End time: 11:28:23 on Dec 05,2022, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/modeltech64_2021.3/win64/vlog failed.
+# Error in macro ./project.do line 30
+# C:/modeltech64_2021.3/win64/vlog failed.
+#     while executing
+# "vlog datapath.sv projectcontrollogic.sv project_tb.sv"

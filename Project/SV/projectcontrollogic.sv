@@ -38,5 +38,5 @@ module mux(seed, decison, grid, y)
     output logic [63:0] y;
 
     assign y = decision?seed:grid;
-    
+
 endmodule
