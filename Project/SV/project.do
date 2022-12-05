@@ -27,7 +27,7 @@ if [file exists work] {
 vlib work
 
 # compile source files
-vlog datapath.sv pdatapath.sv projectcontrollogic.sv project_tb.sv
+vlog datapath.sv datapath2.sv projectcontrollogic.sv project_tb.sv
 
 # start and run simulation
 vsim -voptargs=+acc work.stimulus
