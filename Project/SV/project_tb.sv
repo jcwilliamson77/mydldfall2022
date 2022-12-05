@@ -2,16 +2,19 @@
 module stimulus ();
 
    logic  clk;
-   logic  a;
    logic  reset;
+   logic [63:0] grid;
+   logic [63:0] grid_evolve;
+   logic [63:0] seed;
    
-   logic  y;
    
    integer handle3;
    integer desc3;
+
+   assign seed = 64'h0412_6424_0034_3C28;
    
    // Instantiate DUT
-   FSM dut (clk, reset, a, y);   
+   projectcontrollogic dut (clk, reset, seed, grid, grid_evolve);   
    
    // Setup the clock to toggle every 1 time units 
    initial 
@@ -23,7 +26,7 @@ module stimulus ();
    initial
      begin
 	// Gives output file name
-	handle3 = $fopen("fsm.out");
+	handle3 = $fopen("project.out");
 	// Tells when to finish simulation
 	#500 $finish;		
      end
@@ -31,17 +34,14 @@ module stimulus ();
    always 
      begin
 	desc3 = handle3;
-	#5 $fdisplay(desc3, "%b %b || %b", 
-		     reset, a, y);
+	#5 $fdisplay(desc3, "%b || %b %b", reset, grid, grid_evolve);
      end   
    
    initial 
      begin      
 	#0   reset = 1'b1;
-	#41  reset = 1'b0;	
-	#0   a = 1'b0;
-	#20  a = 1'b1;
-	#20  a = 1'b0;
+	#50  reset = 1'b0;	
+	#100   seed = 64'h0412_6424_0034_3C28;
      end
 
 endmodule // FSM_tb
