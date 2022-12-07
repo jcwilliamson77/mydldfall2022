@@ -59,7 +59,7 @@ module FSM(clk, reset, switch, out);
         end
 
     default: begin
-        nextstate <= S0;
+        next_state <= S0;
         end
       endcase
 endmodule
@@ -70,7 +70,7 @@ module register(clk, reset, grid_evolve, registerval);
     output logic [63:0] registerval;
 
 always_ff @(posedge clk, posedge reset)
-        if (reset) registerval <= S0;
+        if (reset) registerval <= 0;
         else registerval <= grid_evolve; 
 
   
