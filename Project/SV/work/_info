@@ -8,30 +8,55 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/jcwil/Documents/GitHub/mydldfall2022/Project/SV
-vdatapath
+vCONTROL
 Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z2 !s110 1670261303
+Z2 !s110 1670434663
 !i10b 1
-!s100 V;C_hS8f1BHnb36LBjYJ01
-I<ahlD=61ndBBilL@NE8dL1
+!s100 LBjGbJhAYiEekfYkSO_3O1
+I_CC]aJ^N2b5]Ej018BYzQ0
 S1
 R0
-Z3 w1668445808
-Z4 8datapath.sv
-Z5 Fdatapath.sv
+Z3 w1670434652
+Z4 8projectcontrollogic.sv
+Z5 Fprojectcontrollogic.sv
 !i122 0
-L0 7 79
+L0 1 18
 Z6 VDg1SIo80bB@j0V0VzS_@n1
 Z7 OL;L;2021.3;73
 r1
 !s85 0
 31
-Z8 !s108 1670261303.000000
+Z8 !s108 1670434663.000000
 !s107 project_tb.sv|projectcontrollogic.sv|datapath.sv|
 Z9 !s90 datapath.sv|projectcontrollogic.sv|project_tb.sv|
 !i113 0
 Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Z11 tCvgOpt 0
+n@c@o@n@t@r@o@l
+vdatapath
+R1
+R2
+!i10b 1
+!s100 V;C_hS8f1BHnb36LBjYJ01
+I<ahlD=61ndBBilL@NE8dL1
+S1
+R0
+Z12 w1668445808
+Z13 8datapath.sv
+Z14 Fdatapath.sv
+!i122 0
+L0 7 79
+R6
+R7
+r1
+!s85 0
+31
+R8
+Z15 !s107 project_tb.sv|projectcontrollogic.sv|datapath.sv|
+R9
+!i113 0
+R10
+R11
 vevolve3
 R1
 R2
@@ -40,9 +65,9 @@ R2
 IM8klP?6AAQElYj^^>dMog1
 S1
 R0
-R3
-R4
-R5
+R12
+R13
+R14
 !i122 0
 L0 88 14
 R6
@@ -51,7 +76,7 @@ r1
 !s85 0
 31
 R8
-Z12 !s107 project_tb.sv|projectcontrollogic.sv|datapath.sv|
+R15
 R9
 !i113 0
 R10
@@ -64,9 +89,9 @@ R2
 I:N2@j2?Hz8T^_^8H8DMB42
 S1
 R0
-R3
-R4
-R5
+R12
+R13
+R14
 !i122 0
 L0 103 17
 R6
@@ -75,7 +100,7 @@ r1
 !s85 0
 31
 R8
-R12
+R15
 R9
 !i113 0
 R10
@@ -88,9 +113,9 @@ R2
 I9=CLF7`lSL3IgfFX:JW2G3
 S1
 R0
-R3
-R4
-R5
+R12
+R13
+R14
 !i122 0
 L0 122 23
 R6
@@ -99,7 +124,31 @@ r1
 !s85 0
 31
 R8
-R12
+R15
+R9
+!i113 0
+R10
+R11
+vmux
+R1
+R2
+!i10b 1
+!s100 KY9BOlQdZ>U`76ZHnYnXe2
+IUkG>H8^kU:bb4HX:A]Z7A3
+S1
+R0
+R3
+R4
+R5
+!i122 0
+L0 20 12
+R6
+R7
+r1
+!s85 0
+31
+R8
+R15
 R9
 !i113 0
 R10
@@ -112,9 +161,9 @@ R2
 IBcFBl4c5NRZOko>2=jFA93
 S1
 R0
-R3
-R4
-R5
+R12
+R13
+R14
 !i122 0
 L0 147 9
 R6
@@ -123,7 +172,7 @@ r1
 !s85 0
 31
 R8
-R12
+R15
 R9
 !i113 0
 R10

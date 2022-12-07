@@ -1,19 +1,22 @@
 # do project.do
 # Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 11:28:23 on Dec 05,2022
+# Start time: 11:37:43 on Dec 07,2022
 # vlog datapath.sv projectcontrollogic.sv project_tb.sv 
 # -- Compiling module datapath
 # -- Compiling module evolve3
 # -- Compiling module evolve5
 # -- Compiling module evolve8
 # -- Compiling module rules
-# -- Compiling module FSM
-# ** Error: (vlog-13069) projectcontrollogic.sv(14): near "typedef": syntax error, unexpected "SystemVerilog keyword 'typedef'", expecting ';' or ','.
+# -- Compiling module CONTROL
 # -- Compiling module mux
-# ** Error: (vlog-13069) projectcontrollogic.sv(36): near "input": syntax error, unexpected input, expecting ';'.
+# -- Compiling module FSM
+# ** Error: projectcontrollogic.sv(62): (vlog-2730) Undefined variable: 'nextstate'.
+# -- Compiling module register
+# ** Error: projectcontrollogic.sv(73): (vlog-2730) Undefined variable: 'S0'.
 # -- Compiling module stimulus
-# End time: 11:28:23 on Dec 05,2022, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
+# ** Error (suppressible): project_tb.sv(44): (vlog-12003) Variable 'seed' written by continuous and procedural assignments. See project_tb.sv(14). 
+# End time: 11:37:43 on Dec 07,2022, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
 # ** Error: C:/modeltech64_2021.3/win64/vlog failed.
 # Error in macro ./project.do line 30
 # C:/modeltech64_2021.3/win64/vlog failed.
