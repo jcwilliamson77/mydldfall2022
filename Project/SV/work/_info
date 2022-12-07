@@ -11,18 +11,18 @@ z2
 cModel Technology
 Z0 dC:/Users/jcwil/Documents/GitHub/mydldfall2022/Project/SV
 T_opt
-!s110 1670454235
-V`RnXRbk5SIzQ=AiRTQ^i;3
+Z1 !s110 1670455622
+V=?dhRK7^ncVYmQ]i2_oZR0
 04 8 4 work stimulus fast 0
-=1-d03c1f9de775-63911bda-3ae-6634
+=1-d03c1f9de775-63912146-cd-35a0
 !s124 OEM100
 o-quiet -auto_acc_if_foreign -work work +acc
-Z1 tCvgOpt 0
+Z2 tCvgOpt 0
 n@_opt
 OL;O;2021.3;73
 vclk_div
-Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z3 !s110 1670454234
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R1
 !i10b 1
 !s100 `JRJIPio>2zAaNOMPjME61
 IIWD[Cz<NZ0kFLZ=Q6P91?1
@@ -38,21 +38,21 @@ Z5 OL;L;2021.3;73
 r1
 !s85 0
 31
-Z6 !s108 1670454234.000000
+Z6 !s108 1670455621.000000
 Z7 !s107 projectclockdivider.sv|project_tb.sv|projectcontrollogic.sv|datapath.sv|
-Z8 !s90 -reportprogress|300|datapath.sv|projectcontrollogic.sv|project_tb.sv|projectclockdivider.sv|
+Z8 !s90 datapath.sv|projectcontrollogic.sv|project_tb.sv|projectclockdivider.sv|
 !i113 0
 Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
-vCONTROL
 R2
+vCONTROL
 R3
+R1
 !i10b 1
 !s100 P[GH8?lmi`]jefGUcnC9@1
 I`Z4KQ7Z>koOoPBGX31`>l3
 S1
 R0
-Z10 w1670453087
+Z10 w1670455615
 Z11 8projectcontrollogic.sv
 Z12 Fprojectcontrollogic.sv
 !i122 0
@@ -67,11 +67,11 @@ R7
 R8
 !i113 0
 R9
-R1
+R2
 n@c@o@n@t@r@o@l
 vdatapath
-R2
 R3
+R1
 !i10b 1
 !s100 V;C_hS8f1BHnb36LBjYJ01
 I<ahlD=61ndBBilL@NE8dL1
@@ -92,10 +92,10 @@ R7
 R8
 !i113 0
 R9
-R1
-vevolve3
 R2
+vevolve3
 R3
+R1
 !i10b 1
 !s100 IXoNo]gEC0MZaJ37;nO_30
 IM8klP?6AAQElYj^^>dMog1
@@ -116,10 +116,10 @@ R7
 R8
 !i113 0
 R9
-R1
-vevolve5
 R2
+vevolve5
 R3
+R1
 !i10b 1
 !s100 I^MlKOK_W3OeeJBMAXc:W2
 I:N2@j2?Hz8T^_^8H8DMB42
@@ -140,10 +140,10 @@ R7
 R8
 !i113 0
 R9
-R1
-vevolve8
 R2
+vevolve8
 R3
+R1
 !i10b 1
 !s100 X=VQ5`4bnRg0]4e9c_9PV1
 I9=CLF7`lSL3IgfFX:JW2G3
@@ -164,20 +164,20 @@ R7
 R8
 !i113 0
 R9
-R1
-vFSM
 R2
+vFSM
 R3
+R1
 !i10b 1
-!s100 gGCbOn;;?8[:MD6c>N]833
-I9L^foVWi_eOhm?2?N=5ff1
+!s100 gOL<`lKJz6idhN4K0S;`40
+IoYM>JcLCZTXN;_XmI3Pb62
 S1
 R0
 R10
 R11
 R12
 !i122 0
-L0 32 35
+L0 34 35
 R4
 R5
 r1
@@ -188,21 +188,21 @@ R7
 R8
 !i113 0
 R9
-R1
+R2
 n@f@s@m
 vmux2_1
-R2
 R3
+R1
 !i10b 1
-!s100 dLXg_bBSgZ@L5a8B9AmRV2
-I8RUW59T@io@7CC=Si2RL30
+!s100 X3GC[]A`_5T[@KX8T>gN33
+IDI32B9eff_mh6[k4N[`ni1
 S1
 R0
 R10
 R11
 R12
 !i122 0
-L0 18 13
+L0 18 15
 R4
 R5
 r1
@@ -213,20 +213,20 @@ R7
 R8
 !i113 0
 R9
-R1
+R2
 vregister
-R2
 R3
+R1
 !i10b 1
-!s100 i7AAHTLd`W>PDSJPbEY]V1
-I;<?=6JjKbH1>QT`HVM]@c3
+!s100 55@1ce>D9ZRjc0]cALhM<2
+IAVI@kbb4oo@VJ;f;P2AI]3
 S1
 R0
 R10
 R11
 R12
 !i122 0
-L0 68 12
+L0 70 12
 R4
 R5
 r1
@@ -237,10 +237,10 @@ R7
 R8
 !i113 0
 R9
-R1
-vrules
 R2
+vrules
 R3
+R1
 !i10b 1
 !s100 JL3^U4`<X^MUIi:l8LemW2
 IBcFBl4c5NRZOko>2=jFA93
@@ -261,10 +261,10 @@ R7
 R8
 !i113 0
 R9
-R1
-vstimulus
 R2
+vstimulus
 R3
+R1
 !i10b 1
 !s100 UXZJb^EZkIJ_lAkC5zNUi3
 I^31X[_eenlzB@3beHLR1T0
@@ -285,4 +285,4 @@ R7
 R8
 !i113 0
 R9
-R1
+R2

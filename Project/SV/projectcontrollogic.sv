@@ -21,12 +21,14 @@ module mux2_1(FSM, seed, grid_evolve, grid);
     input logic [63:0] grid_evolve;
     output logic [63:0] grid;
 
-    always_comb
+        assign grid = FSM==1?grid_evolve:seed;
+
+    /*always_comb
         case (FSM)
         0: grid <= seed;
         1: grid <= grid_evolve;
         default: grid <= seed;
-        endcase
+        endcase*/
 endmodule
 
 module FSM(clk, reset, switch, out);
