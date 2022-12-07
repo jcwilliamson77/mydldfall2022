@@ -11,10 +11,10 @@ z2
 cModel Technology
 Z0 dC:/Users/jcwil/Documents/GitHub/mydldfall2022/Project/SV
 T_opt
-!s110 1670444210
-VEjHULL;PC2<:94;_hLY?g3
+!s110 1670454235
+V`RnXRbk5SIzQ=AiRTQ^i;3
 04 8 4 work stimulus fast 0
-=1-d03c1f9de775-6390f4b1-30f-3130
+=1-d03c1f9de775-63911bda-3ae-6634
 !s124 OEM100
 o-quiet -auto_acc_if_foreign -work work +acc
 Z1 tCvgOpt 0
@@ -22,7 +22,7 @@ n@_opt
 OL;O;2021.3;73
 vclk_div
 Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z3 !s110 1670444209
+Z3 !s110 1670454234
 !i10b 1
 !s100 `JRJIPio>2zAaNOMPjME61
 IIWD[Cz<NZ0kFLZ=Q6P91?1
@@ -38,9 +38,9 @@ Z5 OL;L;2021.3;73
 r1
 !s85 0
 31
-Z6 !s108 1670444209.000000
+Z6 !s108 1670454234.000000
 Z7 !s107 projectclockdivider.sv|project_tb.sv|projectcontrollogic.sv|datapath.sv|
-Z8 !s90 datapath.sv|projectcontrollogic.sv|project_tb.sv|projectclockdivider.sv|
+Z8 !s90 -reportprogress|300|datapath.sv|projectcontrollogic.sv|project_tb.sv|projectclockdivider.sv|
 !i113 0
 Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
@@ -52,7 +52,7 @@ R3
 I`Z4KQ7Z>koOoPBGX31`>l3
 S1
 R0
-Z10 w1670442365
+Z10 w1670453087
 Z11 8projectcontrollogic.sv
 Z12 Fprojectcontrollogic.sv
 !i122 0
@@ -270,7 +270,7 @@ R3
 I^31X[_eenlzB@3beHLR1T0
 S1
 R0
-w1670444203
+w1670451603
 8project_tb.sv
 Fproject_tb.sv
 !i122 0

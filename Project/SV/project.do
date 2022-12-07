@@ -37,7 +37,7 @@ view wave
 
 -- display input and output signals as hexidecimal values
 # Diplays All Signals recursively
-# add wave -hex -r /stimulus/*
+add wave -hex -r /stimulus/*
 #add wave -noupdate -divider -height 32 "GAME of LIFE" //namedthis
 #add wave -hex /stimulus/dut/clk
 #add wave -hex /stimulus/dut/current_state
