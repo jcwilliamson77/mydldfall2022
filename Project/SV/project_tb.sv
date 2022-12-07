@@ -3,7 +3,8 @@ module stimulus ();
 
    logic  clk;
    logic  reset;
-   logic [63:0] grid;
+   logic switch;
+   logic [63:0] registerval;
    logic [63:0] grid_evolve;
    logic [63:0] seed;
    
@@ -11,10 +12,10 @@ module stimulus ();
    integer handle3;
    integer desc3;
 
-   assign seed = 64'h0412_6424_0034_3C28;
+   //assign seed = 64'h0412_6424_0034_3C28;
    
    // Instantiate DUT
-   projectcontrollogic dut (clk, reset, seed, grid, grid_evolve);   
+   CONTROL dut (switch, clk, reset, seed, registerval);   
    
    // Setup the clock to toggle every 1 time units 
    initial 
@@ -34,14 +35,17 @@ module stimulus ();
    always 
      begin
 	desc3 = handle3;
-	#5 $fdisplay(desc3, "%b || %b %b", reset, grid, grid_evolve);
+	#10 $fdisplay(desc3, "Switch: %b || Reset: %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b", 
+     switch, reset, registerval[7:0], registerval[15:8], registerval[23:16], registerval[31:24], registerval[39:32], registerval[47:40],
+     registerval[55:48], registerval[63:56]);
      end   
    
    initial 
      begin      
 	#0   reset = 1'b1;
-	#50  reset = 1'b0;	
-	#100   seed = 64'h0412_6424_0034_3C28;
+	#30  reset = 1'b0;	
+     #0   switch = 1'b1;
+	#0   seed = 64'h0412_6424_0034_3C28;
      end
 
 endmodule // FSM_tb
