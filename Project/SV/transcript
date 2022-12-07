@@ -1,6 +1,6 @@
 # do project.do
 # Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 13:49:32 on Dec 07,2022
+# Start time: 14:07:48 on Dec 07,2022
 # vlog datapath.sv projectcontrollogic.sv project_tb.sv projectclockdivider.sv 
 # -- Compiling module datapath
 # -- Compiling module evolve3
@@ -17,10 +17,10 @@
 # Top level modules:
 # 	stimulus
 # 	clk_div
-# End time: 13:49:32 on Dec 07,2022, Elapsed time: 0:00:00
+# End time: 14:07:48 on Dec 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" work.stimulus 
-# Start time: 13:49:32 on Dec 07,2022
+# Start time: 14:07:48 on Dec 07,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  ModelSim SE-64 2021.3 Jul 13 2021
 # //
@@ -46,10 +46,6 @@
 # Loading work.evolve5(fast)
 # Loading work.evolve8(fast)
 # Loading work.register(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'seed'. The port definition is at: projectcontrollogic.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut File: project_tb.sv Line: 18
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (64) for port 'clk'. The port definition is at: projectcontrollogic.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut File: project_tb.sv Line: 18
 # .list
 # configure wave not supported in batch mode
 # configure wave not supported in batch mode
@@ -61,5 +57,5 @@
 # configure wave not supported in batch mode
 # ** Note: $finish    : project_tb.sv(32)
 #    Time: 500 ns  Iteration: 0  Instance: /stimulus
-# End time: 13:49:33 on Dec 07,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 2
+# End time: 14:07:49 on Dec 07,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

@@ -15,7 +15,7 @@ module stimulus ();
    //assign seed = 64'h0412_6424_0034_3C28;
    
    // Instantiate DUT
-   CONTROL dut (switch, clk, reset, seed, registerval);   
+   CONTROL dut (switch, reset, seed, clk, registerval);   
    
    // Setup the clock to toggle every 1 time units 
    initial 
