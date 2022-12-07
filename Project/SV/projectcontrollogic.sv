@@ -8,7 +8,6 @@ module CONTROL (switch, reset, seed, clk, registerval);
     logic out;
     logic [63:0] grid;
     
-
 FSM fsm(clk, reset, switch, out);
 mux2_1 mux(out, seed, registerval, grid);
 datapath datapath(grid, grid_evolve);
@@ -18,7 +17,8 @@ endmodule
 
 module mux2_1(FSM, seed, grid_evolve, grid);
     input logic FSM;
-    input logic [63:0] seed, grid_evolve;
+    input logic [63:0] seed; 
+    input logic [63:0] grid_evolve;
     output logic [63:0] grid;
 
     always_comb
@@ -30,7 +30,9 @@ module mux2_1(FSM, seed, grid_evolve, grid);
 endmodule
 
 module FSM(clk, reset, switch, out);
-    input logic clk, reset, switch;
+    input logic clk;
+    input logic reset; 
+    input logic switch;
     output logic out;
 
     typedef enum logic {S0, S1} statetype;
@@ -64,7 +66,8 @@ module FSM(clk, reset, switch, out);
 endmodule
 
 module register(clk, reset, grid_evolve, registerval);
-    input logic clk, reset;
+    input logic clk;
+    input logic reset;
     input logic [63:0] grid_evolve;
     output logic [63:0] registerval;
 
