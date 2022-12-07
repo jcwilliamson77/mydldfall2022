@@ -1,15 +1,16 @@
-module CONTROL (clk, reset, seed, switch, registerval);
+module CONTROL (switch, reset, seed, clk, registerval);
     input logic switch;
     input logic reset;
-    input logic clk;
     input logic [63:0] seed;
+    input logic clk;
     output logic [63:0] registerval;
     logic [63:0] grid_evolve;
-    logic [63:0] grid;
     logic out;
+    logic [63:0] grid;
+    
 
-mux2_1 mux(seed, out, grid, registerval);
 FSM fsm(clk, reset, switch, out);
+mux2_1 mux(out, seed, registerval, grid);
 datapath datapath(grid, grid_evolve);
 register register(clk, reset, grid_evolve, registerval);
 

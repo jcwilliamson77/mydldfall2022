@@ -1,6 +1,6 @@
 # do project.do
 # Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 12:44:02 on Dec 07,2022
+# Start time: 13:42:23 on Dec 07,2022
 # vlog datapath.sv projectcontrollogic.sv project_tb.sv 
 # -- Compiling module datapath
 # -- Compiling module evolve3
@@ -15,10 +15,10 @@
 # 
 # Top level modules:
 # 	stimulus
-# End time: 12:44:02 on Dec 07,2022, Elapsed time: 0:00:00
+# End time: 13:42:23 on Dec 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" work.stimulus 
-# Start time: 12:44:02 on Dec 07,2022
+# Start time: 13:42:23 on Dec 07,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  ModelSim SE-64 2021.3 Jul 13 2021
 # //
@@ -36,8 +36,8 @@
 # Loading sv_std.std
 # Loading work.stimulus(fast)
 # Loading work.CONTROL(fast)
-# Loading work.mux2_1(fast)
 # Loading work.FSM(fast)
+# Loading work.mux2_1(fast)
 # Loading work.datapath(fast)
 # Loading work.evolve3(fast)
 # Loading work.rules(fast)
@@ -46,14 +46,11 @@
 # Loading work.register(fast)
 # ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'seed'. The port definition is at: projectcontrollogic.sv(1).
 #    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut File: project_tb.sv Line: 18
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (64) for port 'switch'. The port definition is at: projectcontrollogic.sv(1).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (64) for port 'clk'. The port definition is at: projectcontrollogic.sv(1).
 #    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut File: project_tb.sv Line: 18
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (64) for port 'FSM'. The port definition is at: projectcontrollogic.sv(18).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/mux File: projectcontrollogic.sv Line: 11
-# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'seed'. The port definition is at: projectcontrollogic.sv(18).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/mux File: projectcontrollogic.sv Line: 11
-# ** Error (suppressible): (vsim-3839) Variable '/stimulus/dut/registerval', driven via a port connection, is multiply driven. See projectcontrollogic.sv(11).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/register File: projectcontrollogic.sv Line: 14
-# Error loading design
-# End time: 12:44:03 on Dec 07,2022, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 4
+# .list
+# ** UI-Msg: (vish-4014) No objects found matching '/stimulus/dut/current_state'.
+# Error in macro ./project.do line 43
+# ** UI-Msg: (vish-4014) No objects found matching '/stimulus/dut/current_state'.
+#     while executing
+# "add wave -hex /stimulus/dut/current_state"

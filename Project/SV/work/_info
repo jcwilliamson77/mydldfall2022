@@ -11,10 +11,10 @@ z2
 cModel Technology
 Z0 dC:/Users/jcwil/Documents/GitHub/mydldfall2022/Project/SV
 T_opt
-Z1 !s110 1670438642
-VcC=dXaOG9n0Z0J:Ldo15I3
+Z1 !s110 1670442143
+VNgV?9c5T[[znNFGi]jh621
 04 8 4 work stimulus fast 0
-=1-d03c1f9de775-6390def2-26d-3118
+=1-d03c1f9de775-6390ec9f-1c3-5fa0
 !s124 OEM100
 o-quiet -auto_acc_if_foreign -work work +acc
 Z2 tCvgOpt 0
@@ -24,21 +24,21 @@ vCONTROL
 Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
 R1
 !i10b 1
-!s100 jHZ20:ZF>QHU@MGYA>THO0
-I<TCc>441357:f?BelBoIf1
+!s100 [gBH_hH7MU<GCfNGD;i4J1
+IKEo5;zI:d`KRj1oVJ<Hol2
 S1
 R0
-Z4 w1670438636
+Z4 w1670442134
 Z5 8projectcontrollogic.sv
 Z6 Fprojectcontrollogic.sv
 !i122 0
-L0 1 16
+L0 1 17
 Z7 VDg1SIo80bB@j0V0VzS_@n1
 Z8 OL;L;2021.3;73
 r1
 !s85 0
 31
-Z9 !s108 1670438642.000000
+Z9 !s108 1670442143.000000
 Z10 !s107 project_tb.sv|projectcontrollogic.sv|datapath.sv|
 Z11 !s90 datapath.sv|projectcontrollogic.sv|project_tb.sv|
 !i113 0
@@ -145,15 +145,15 @@ vFSM
 R3
 R1
 !i10b 1
-!s100 CL1lGjIi66G[n:cS:Z?9F1
-I?k`5i1FK8c=[M^:=8PzKc2
+!s100 HMoW<UKGNQ@E4BVV1A1Hd3
+ITMOe0<IH2^5?ATBM[eSeL0
 S1
 R0
 R4
 R5
 R6
 !i122 0
-L0 31 33
+L0 32 33
 R7
 R8
 r1
@@ -170,15 +170,15 @@ vmux2_1
 R3
 R1
 !i10b 1
-!s100 0cB<4IYRYUT=4;J3F2LJQ3
-IPWZ0OY3m>c`YOCXV0_68a3
+!s100 QRAhHI6_2V;Li=[cRDQ:S0
+IZOcK@9Q=fF=dMbVYQZ81K0
 S1
 R0
 R4
 R5
 R6
 !i122 0
-L0 18 12
+L0 19 12
 R7
 R8
 r1
@@ -194,15 +194,15 @@ vregister
 R3
 R1
 !i10b 1
-!s100 zJ8n4?MoIEYLGU=XeJgU21
-Ij<_R?@cLFifO`f6mZ<5BW3
+!s100 GBnWae>=81`JYS>JW:7KO3
+ILW=h3P0Fa?]5o2Wzb9<hj0
 S1
 R0
 R4
 R5
 R6
 !i122 0
-L0 65 11
+L0 66 11
 R7
 R8
 r1
