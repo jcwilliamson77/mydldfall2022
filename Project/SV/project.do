@@ -46,6 +46,8 @@ add wave -hex /stimulus/dut/grid
 add wave -hex /stimulus/dut/grid_evolve
 add wave -hex /stimulus/dut/reset
 add wave -hex /stimulus/dut/seed
+add wave -hex /stimulus/dut/switch
+add wave -hex /stimulus/dut/registerval
 
 
 
