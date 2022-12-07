@@ -29,7 +29,7 @@ module stimulus ();
 	// Gives output file name
 	handle3 = $fopen("project.out");
 	// Tells when to finish simulation
-	#500 $finish;		
+	#1000 $finish;		
      end
 
    always 
