@@ -35,7 +35,7 @@ module stimulus ();
    always 
      begin
 	desc3 = handle3;
-	#5 $fdisplay(desc3, "Switch: %b || Reset: %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b", 
+	#5 $fdisplay(desc3, "Switch: %b || Reset: %b\n %b\n %b\n %b\n %b\n %b\n %b\n %b\n %b", 
      switch, reset, register_v[7:0], register_v[15:8], register_v[23:16], register_v[31:24], register_v[39:32], register_v[47:40],
      register_v[55:48], register_v[63:56]);
      end   
