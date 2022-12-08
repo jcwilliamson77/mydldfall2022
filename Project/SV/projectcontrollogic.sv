@@ -1,27 +1,28 @@
-module CONTROL (switch, reset, seed, clk, registerval);
+module CONTROL (switch, reset, seed, clk, register_v);
     input logic switch;
     input logic reset;
     input logic [63:0] seed;
     input logic clk;
-    output logic [63:0] registerval;
+    output logic [63:0] register_v;
+    logic [63:0] grid;
     logic [63:0] grid_evolve;
     logic out;
-    logic [63:0] grid;
+    
     
 fsm fsm(clk, reset, switch, out);
-mux2_1 mux(out, seed, registerval, grid);
+mux2_1 mux(out, seed, register_v, grid);
 datapath datapath(grid, grid_evolve);
-register register(clk, reset, grid_evolve, registerval);
+register register(clk, reset, grid_evolve, register_v);
 
 endmodule
 
-module mux2_1(fsm, seed, grid_evolve, grid);
+module mux2_1(fsm, seed, grid, grid_evolve);
     input logic fsm;
     input logic [63:0] seed; 
-    input logic [63:0] grid_evolve;
-    output logic [63:0] grid;
+    input logic [63:0] grid;
+    output logic [63:0] grid_evolve;
 
-        assign grid = fsm==1?grid_evolve:seed;
+        assign grid_evolve = fsm==1?grid:seed;
 
     /*always_comb
         case (fsm)
@@ -67,15 +68,15 @@ module fsm(clk, reset, switch, out);
       endcase
 endmodule
 
-module register(clk, reset, grid_evolve, registerval);
+module register(clk, reset, grid_evolve, register_v); //grid_evolve
     input logic clk;
     input logic reset;
-    input logic [63:0] grid_evolve;
-    output logic [63:0] registerval;
+    input logic [63:0] grid_evolve; //grid_evolve
+    output logic [63:0] register_v;
 
 always_ff @(posedge clk, posedge reset)
-        if (reset) registerval <= 0;
-        else registerval <= grid_evolve; 
+        if (reset) register_v <= 0;
+        else register_v <= grid_evolve; //grid_evolve
 
   
 endmodule
