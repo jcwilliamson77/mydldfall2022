@@ -8,30 +8,30 @@ module CONTROL (switch, reset, seed, clk, registerval);
     logic out;
     logic [63:0] grid;
     
-FSM fsm(clk, reset, switch, out);
+fsm fsm(clk, reset, switch, out);
 mux2_1 mux(out, seed, registerval, grid);
 datapath datapath(grid, grid_evolve);
 register register(clk, reset, grid_evolve, registerval);
 
 endmodule
 
-module mux2_1(FSM, seed, grid_evolve, grid);
-    input logic FSM;
+module mux2_1(fsm, seed, grid_evolve, grid);
+    input logic fsm;
     input logic [63:0] seed; 
     input logic [63:0] grid_evolve;
     output logic [63:0] grid;
 
-        assign grid = FSM==1?grid_evolve:seed;
+        assign grid = fsm==1?grid_evolve:seed;
 
     /*always_comb
-        case (FSM)
+        case (fsm)
         0: grid <= seed;
         1: grid <= grid_evolve;
         default: grid <= seed;
         endcase*/
 endmodule
 
-module FSM(clk, reset, switch, out);
+module fsm(clk, reset, switch, out);
     input logic clk;
     input logic reset; 
     input logic switch;

@@ -1,6 +1,6 @@
 # do project.do
 # Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 17:27:01 on Dec 07,2022
+# Start time: 18:06:12 on Dec 07,2022
 # vlog datapath.sv projectcontrollogic.sv project_tb.sv projectclockdivider.sv 
 # -- Compiling module datapath
 # -- Compiling module evolve3
@@ -9,7 +9,7 @@
 # -- Compiling module rules
 # -- Compiling module CONTROL
 # -- Compiling module mux2_1
-# -- Compiling module FSM
+# -- Compiling module fsm
 # -- Compiling module register
 # -- Compiling module stimulus
 # -- Compiling module clk_div
@@ -17,10 +17,10 @@
 # Top level modules:
 # 	stimulus
 # 	clk_div
-# End time: 17:27:02 on Dec 07,2022, Elapsed time: 0:00:01
+# End time: 18:06:13 on Dec 07,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" work.stimulus 
-# Start time: 17:27:02 on Dec 07,2022
+# Start time: 18:06:13 on Dec 07,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  ModelSim SE-64 2021.3 Jul 13 2021
 # //
@@ -38,7 +38,7 @@
 # Loading sv_std.std
 # Loading work.stimulus(fast)
 # Loading work.CONTROL(fast)
-# Loading work.FSM(fast)
+# Loading work.fsm(fast)
 # Loading work.mux2_1(fast)
 # Loading work.datapath(fast)
 # Loading work.evolve3(fast)
@@ -56,6 +56,6 @@
 # configure wave not supported in batch mode
 # configure wave not supported in batch mode
 # ** Note: $finish    : project_tb.sv(32)
-#    Time: 1 us  Iteration: 0  Instance: /stimulus
-# End time: 17:27:02 on Dec 07,2022, Elapsed time: 0:00:00
+#    Time: 500 ns  Iteration: 0  Instance: /stimulus
+# End time: 18:06:14 on Dec 07,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
