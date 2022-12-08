@@ -11,18 +11,18 @@ z2
 cModel Technology
 Z0 dC:/Users/jcwil/Documents/GitHub/mydldfall2022/Project/SV
 T_opt
-!s110 1670467959
-VW]aO4USBEHcY=Z5kUEZ`G1
+Z1 !s110 1670528870
+VRDRC0?gP2?VBzDF]Z2B641
 04 8 4 work stimulus fast 0
-=1-d03c1f9de775-63915177-3-1188
+=1-d03c1f9de775-63923f66-1d3-34a4
 !s124 OEM100
 o-quiet -auto_acc_if_foreign -work work +acc
-Z1 tCvgOpt 0
+Z2 tCvgOpt 0
 n@_opt
 OL;O;2021.3;73
 vclk_div
-Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z3 !s110 1670467958
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R1
 !i10b 1
 !s100 `JRJIPio>2zAaNOMPjME61
 IIWD[Cz<NZ0kFLZ=Q6P91?1
@@ -38,25 +38,25 @@ Z5 OL;L;2021.3;73
 r1
 !s85 0
 31
-Z6 !s108 1670467958.000000
+Z6 !s108 1670528870.000000
 Z7 !s107 projectclockdivider.sv|project_tb.sv|projectcontrollogic.sv|datapath.sv|
-Z8 !s90 -reportprogress|300|datapath.sv|projectcontrollogic.sv|project_tb.sv|projectclockdivider.sv|
+Z8 !s90 datapath.sv|projectcontrollogic.sv|project_tb.sv|projectclockdivider.sv|
 !i113 0
 Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
-vCONTROL
 R2
+vCONTROL
 R3
+R1
 !i10b 1
-!s100 ?3]oLZ0[j0Ge]5cVC;hoo2
-II?6e3;K^8Mf4Aa6cCA]W>0
+!s100 ^4>_CU=cMa6?d`bhNTTG51
+IYef;g]N2YYb7UfV6[zl_a2
 S1
 R0
-Z10 w1670467878
+Z10 w1670528859
 Z11 8projectcontrollogic.sv
 Z12 Fprojectcontrollogic.sv
 !i122 0
-L0 1 17
+L0 1 18
 R4
 R5
 r1
@@ -67,11 +67,11 @@ R7
 R8
 !i113 0
 R9
-R1
+R2
 n@c@o@n@t@r@o@l
 vdatapath
-R2
 R3
+R1
 !i10b 1
 !s100 V;C_hS8f1BHnb36LBjYJ01
 I<ahlD=61ndBBilL@NE8dL1
@@ -92,10 +92,10 @@ R7
 R8
 !i113 0
 R9
-R1
-vevolve3
 R2
+vevolve3
 R3
+R1
 !i10b 1
 !s100 IXoNo]gEC0MZaJ37;nO_30
 IM8klP?6AAQElYj^^>dMog1
@@ -116,10 +116,10 @@ R7
 R8
 !i113 0
 R9
-R1
-vevolve5
 R2
+vevolve5
 R3
+R1
 !i10b 1
 !s100 I^MlKOK_W3OeeJBMAXc:W2
 I:N2@j2?Hz8T^_^8H8DMB42
@@ -140,10 +140,10 @@ R7
 R8
 !i113 0
 R9
-R1
-vevolve8
 R2
+vevolve8
 R3
+R1
 !i10b 1
 !s100 X=VQ5`4bnRg0]4e9c_9PV1
 I9=CLF7`lSL3IgfFX:JW2G3
@@ -164,20 +164,20 @@ R7
 R8
 !i113 0
 R9
-R1
+R2
 vfsm
-R2
 R3
+R1
 !i10b 1
-!s100 Cb@K_=lN;Cg?0hlz[kD@@2
-I5[:=`>0J=<c2PN9:VEYF_1
+!s100 O=TQ2U9;4H4X0O2D`f[<j2
+ICI9PkY<9:C:8fePo1c28e0
 S1
 R0
 R10
 R11
 R12
 !i122 0
-L0 35 35
+L0 36 35
 R4
 R5
 r1
@@ -188,20 +188,20 @@ R7
 R8
 !i113 0
 R9
-R1
+R2
 vmux2_1
-R2
 R3
+R1
 !i10b 1
-!s100 <S>iSL<HTB5b9Ekm4jo`31
-IkaE4XcbZ0QZldUfIfij>R3
+!s100 SeZk@M949:e;78fgni]@81
+IWJX2gKIRai2]6hS^h:4Hm1
 S1
 R0
 R10
 R11
 R12
 !i122 0
-L0 19 15
+L0 20 15
 R4
 R5
 r1
@@ -212,20 +212,20 @@ R7
 R8
 !i113 0
 R9
-R1
+R2
 vregister
-R2
 R3
+R1
 !i10b 1
-!s100 7L[eT_XD32VlYV_Xaodg13
-IN5Om[o2[hn@o]D_nHeCUS3
+!s100 PXDWP=mRZQh5`GQ24kh7D3
+I_VlNQ]l<1E_S[^NQTSMC>1
 S1
 R0
 R10
 R11
 R12
 !i122 0
-L0 71 12
+L0 72 12
 R4
 R5
 r1
@@ -236,10 +236,10 @@ R7
 R8
 !i113 0
 R9
-R1
-vrules
 R2
+vrules
 R3
+R1
 !i10b 1
 !s100 JL3^U4`<X^MUIi:l8LemW2
 IBcFBl4c5NRZOko>2=jFA93
@@ -260,16 +260,16 @@ R7
 R8
 !i113 0
 R9
-R1
-vstimulus
 R2
+vstimulus
 R3
+R1
 !i10b 1
-!s100 XkF8Q9YcUiI?`L5X@1FGR3
-IL2<oEY;I?[6CLhm;L?j?z1
+!s100 2[?C3k`f_[3WobT5E9G551
+II^18jlL]ZgT]_<XbCU6<R1
 S1
 R0
-w1670457906
+w1670527414
 8project_tb.sv
 Fproject_tb.sv
 !i122 0
@@ -284,4 +284,4 @@ R7
 R8
 !i113 0
 R9
-R1
+R2

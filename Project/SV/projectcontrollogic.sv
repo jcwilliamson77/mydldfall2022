@@ -12,7 +12,8 @@ module CONTROL (switch, reset, seed, clk, register_v);
 fsm fsm(clk, reset, switch, out);
 mux2_1 mux(out, seed, register_v, grid);
 datapath datapath(grid, grid_evolve);
-register register(clk, reset, grid_evolve, register_v);
+register register(clk, reset, grid_evolve, register_v);  //grid_evolve
+
 
 endmodule
 
@@ -57,7 +58,7 @@ module fsm(clk, reset, switch, out);
         end
 
     S1: begin
-        out <= 1'b0;
+        out <= 1'b1;
         if (switch) next_state <= S1;
         else        next_state <= S0;
         end
@@ -68,15 +69,15 @@ module fsm(clk, reset, switch, out);
       endcase
 endmodule
 
-module register(clk, reset, grid_evolve, register_v); //grid_evolve
+module register(clk, reset, grid, register_v); //grid_evolve
     input logic clk;
     input logic reset;
-    input logic [63:0] grid_evolve; //grid_evolve
+    input logic [63:0] grid; //grid_evolve
     output logic [63:0] register_v;
 
 always_ff @(posedge clk, posedge reset)
         if (reset) register_v <= 0;
-        else register_v <= grid_evolve; //grid_evolve
+        else register_v <= grid; //grid_evolve
 
   
 endmodule
